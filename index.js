@@ -6,10 +6,12 @@ const npc = newNonPlayableCharacter(50, 300)
 
 // have the NPC start walking east immediately
 npc.walkEast(500, () => {
-    npc.walkNorth()                                                   
-})
-                             
+    npc.walkNorth(1400)                                              
+})                         
+npc.walkWest(2700,() => {
+    npc.walkSouth(1500) 
 
+})   
 
 // Create the inventory
 const inventory = newInventory()
